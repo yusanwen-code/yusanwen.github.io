@@ -1,0 +1,39 @@
+/* 自定义样式 - 中文阅读优化 */
+
+/* 调整正文字体和行高 */
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* 代码块样式微调 */
+.post-content pre {
+    border-radius: 8px;
+}
+
+/* 引用块样式 */
+.post-content blockquote {
+    border-left: 4px solid var(--primary);
+    background: var(--code-bg);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* 周刊分隔线 */
+.post-content hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+/* 列表项间距 */
+.post-content li {
+    margin: 0.5rem 0;
+}
+
+/* 首页介绍文字 */
+.home-info .entry-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}

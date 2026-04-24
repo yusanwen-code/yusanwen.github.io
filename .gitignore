@@ -1,0 +1,19 @@
+# Hugo
+public/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+
+# 锁文件
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

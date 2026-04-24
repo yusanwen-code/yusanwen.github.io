@@ -1,0 +1,121 @@
+baseURL: "https://yusanwen-code.github.io/"
+languageCode: "zh-cn"
+title: "雨三文的科技周刊"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 分页
+pagination:
+  pagerSize: 10
+
+# 代码高亮
+markup:
+  highlight:
+    style: github
+    lineNos: true
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+# 菜单
+menu:
+  main:
+    - identifier: issues
+      name: "周刊"
+      url: /issues/
+      weight: 10
+    - identifier: archives
+      name: "归档"
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: "搜索"
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: "关于"
+      url: /about/
+      weight: 40
+
+# 参数
+params:
+  env: production
+  title: "雨三文的科技周刊"
+  description: "每周一期，记录 AI、生活、科技与工具的观察与思考。"
+  keywords: ["周刊", "AI", "科技", "工具", "生活"]
+  author: "雨三文"
+
+  # 默认暗色模式
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  # 日期格式
+  DateFormat: "2006年1月2日"
+
+  # 首页设置
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  # 首页内容
+  homeInfoParams:
+    Title: "👋 欢迎阅读雨三文的科技周刊"
+    Content: >
+      这里每周发布一期，记录我对 **AI、生活、科技与工具** 的观察与思考。
+
+      内容包括 AI 前沿动态、生活感悟、科技新闻、实用工具推荐，以及每周的精选阅读。
+
+      希望这些内容对你有所启发。
+
+  # 社交链接
+  socialIcons:
+    - name: github
+      url: "https://github.com/yusanwen-code"
+    - name: rss
+      url: "index.xml"
+
+  # 搜索
+  search:
+    enable: true
+    placeholder: "搜索文章..."
+
+  # 编辑链接（可选）
+  editPost:
+    URL: "https://github.com/yusanwen-code/yusanwen.github.io/tree/main/content"
+    Text: "建议修改"
+    appendFilePath: true
+
+  # 分享
+  ShareButtons: ["twitter", "telegram"]
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 隐私设置
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
