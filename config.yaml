@@ -48,8 +48,6 @@ params:
   sidebar:
     emoji: 📝
     subtitle: 每周一期，记录 AI、生活、科技与工具的观察与思考
-    avatar:
-      enabled: false
 
   # 小部件
   widgets:
