@@ -1,0 +1,155 @@
+baseurl: https://yusanwen.github.io
+languageCode: zh-cn
+theme: stack
+title: 愚三问的科技周刊
+copyright: 愚三问
+
+params:
+  mainSections:
+    - issues
+
+  # 网站功能开关
+  lastmod: true
+  rssFullContent: true
+
+  # 日期格式
+  dateFormat:
+    published: 2006年1月2日
+    lastUpdated: 2006年1月2日
+
+  # 文章页配置
+  article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
+
+  # 评论配置 - Giscus
+  comments:
+    enabled: true
+    provider: giscus
+    giscus:
+      repo: yusanwen/yusanwen.github.io
+      repoId:
+      category: General
+      categoryId:
+      mapping: pathname
+      strict: false
+      reactionsEnabled: "1"
+      emitMetadata: "0"
+      inputPosition: top
+      theme: dark
+      lang: zh-CN
+      loading: lazy
+
+  # 侧边栏配置
+  sidebar:
+    emoji: 📝
+    subtitle: 每周一期，记录 AI、生活、科技与工具的观察与思考
+    avatar:
+      enabled: false
+
+  # 小部件
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 20
+    page:
+      - type: toc
+
+  # 开放图谱
+  opengraph:
+    twitter:
+      site: ""
+      card: summary_large_image
+
+  # 默认封面图
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src: ""
+
+# 菜单配置
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: -100
+      params:
+        icon: home
+
+    - identifier: issues
+      name: 周刊
+      url: /issues/
+      weight: -90
+      params:
+        icon: list
+
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: -80
+      params:
+        icon: archives
+
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: -70
+      params:
+        icon: user
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/yusanwen
+      params:
+        icon: brand-github
+
+# 相关文章
+related:
+  includeNewer: true
+  indices:
+    - name: keywords
+      weight: 100
+    - name: tags
+      weight: 80
+    - name: categories
+      weight: 60
+  threshold: 80
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+
+# 站点地图
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
+# 构建配置
+build:
+  writeStats: false
+
+# 分页
+pagination:
+  pagerSize: 10
